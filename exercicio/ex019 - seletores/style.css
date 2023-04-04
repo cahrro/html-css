@@ -1,0 +1,40 @@
+@font-face{
+    font-family: jojo;
+    src: url(fonts/SF\ Fedora.ttf) format(truetype);
+    font-family: tjojo
+    url(fonts/SF\ Fedora\ Titles.ttf) format(truetype);
+}
+body{
+    font: 1.2em arial,helvetica,sans-serif;
+    background-color: #4883AD;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    width: 1000px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px #346283;
+    
+}
+
+.intermediario{
+    font-family: tjojo;
+    color: #3B4C68;
+    background-color: #E8E1FF;
+}
+
+h1{
+    color: #8B65D2;
+    font-size: 2em;
+}
+
+#principal{
+    font-family: jojo;
+    font-size: 2.5em;
+    color: #C93BE7;
+    
+}
+
+    
