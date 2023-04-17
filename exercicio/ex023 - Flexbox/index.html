@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexione</title>
+</head>
+<style>
+    .flexbox-container{
+        background-color: lightpink;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .flitem{
+        width: 200px;
+        margin: 20px;
+        border: 4px solid purple;
+        background: lightblue;
+    }
+    .item1{
+        display: flex;
+        min-height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .item2{
+        min-height: 200px;
+    }
+
+    .item3{
+        min-height: 300px;
+    }
+
+    .item1>h1{
+        text-align: center;
+        font-size: 2em;
+    }
+</style>
+<body>
+    <div class="flexbox-container">
+        <div class=" flitem item1">
+            <h1>Batata</h1>
+        </div>
+        <div class=" flitem item2"></div>
+        <div class=" flitem item3"></div>
+    </div>
+</body>
+</html>
