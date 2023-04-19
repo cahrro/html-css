@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body, html{
+    background: darkgray;
+    width: 100%;
+}
+
+header{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+header>h1{
+    /* padding-top: 50px; */
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+header>p{
+    margin: 10px;
+    font-size: 25px;
+}
+
+header>p>a, footer>p>a{
+    color: white;
+    text-decoration: none;
+}
+
+header>p>a:hover, footer>p>a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+    color: rgb(209, 153, 11);
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+.normal{
+    background: white;
+}
+
+.img{
+    background: rgba(0, 0, 0, 0.568);
+    color: white;
+}
+
+.img > p{
+    background: black;
+    width: 400px;
+}
+pre{
+    white-space: pre-line;
+}
+
+footer{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background: black;
+}
