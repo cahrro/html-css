@@ -52,16 +52,36 @@ section{
 
 .normal{
     background: white;
+    
 }
 
 .img{
     background: rgba(0, 0, 0, 0.568);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.418);
+    
 }
 
 .img > pre{
-    background: rgba(0, 0, 0, 0.205);
+    background: rgba(0, 0, 0, 0.548);
     width: 400px;
+    padding-left: 5px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.356);
+}
+
+#img01{
+    background: url(../imagens/background001.jpg); background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img02{
+    background: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 pre{
     white-space: pre-line;
