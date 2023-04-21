@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas tabelas</title>
+</head>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    table{
+        border-collapse: collapse;
+        width: 400px;
+        border: 1px solid black;
+        margin: auto;        
+    }
+
+    td, th{
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    td:nth-child(2){
+        text-align: right;
+    }
+    thead, tfoot{
+        background-color: rgb(98, 134, 170);
+        color: white;
+    }
+</style>
+<body>
+    <h1>Tabelas tabelas tabelas</h1>
+    <h2>Top5 estados com mais pessoas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>46 024 937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>15 989 929</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>10 444 526</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td><strong>106 073 628</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
