@@ -15,7 +15,26 @@
         border-collapse: collapse;
         width: 400px;
         border: 1px solid black;
-        margin: auto;        
+        margin: auto;  
+        position: relative;      
+    }  
+    
+    thead{
+        position: sticky;
+        top: -1px;
+    }
+    thead th, tfoot{
+        background-color: rgb(98, 134, 170);
+        color: white;
+    }
+    
+    caption{
+        font-size: 0.9em;
+        background-color: gray;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
     }
 
     td, th{
@@ -26,19 +45,27 @@
     td:nth-child(2){
         text-align: right;
     }
-    thead, tfoot{
-        background-color: rgb(98, 134, 170);
-        color: white;
+
+    tbody>tr:nth-child(even){
+        background-color: lightblue;
     }
+    tbody>tr:hover{
+        color: white;
+        font-weight: bold;
+        background-color: rgb(62, 62, 204);
+    }
+
+
 </style>
 <body>
     <h1>Tabelas tabelas tabelas</h1>
     <h2>Top5 estados com mais pessoas</h2>
     <table>
+        <caption>População de pessoas, pessoas essas, que moram em estados</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -62,13 +89,65 @@
                 <td>Paraná</td>
                 <td>10 444 526</td>
             </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11 088 065</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 051 113</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>8 936 431</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8 442 962</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7 762 154</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>6 950 976</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>6 800 605</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>4 108 508</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>4 030 961</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>3 952 262</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>106 073 628</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sit exercitationem, modi reiciendis doloribus repellat architecto explicabo dicta quia, quidem, asperiores natus quaerat illo sequi. Dolores laboriosam quod modi ducimus!
+        Quia tempore vitae nisi dignissimos deserunt accusantium quod natus aliquid non. Cum molestiae sapiente facilis quisquam quasi numquam expedita dicta deserunt exercitationem qui. Atque assumenda tempora minus recusandae voluptatibus ex?
+        Impedit sint minima unde esse, cupiditate earum nam soluta odit ea. Ducimus at, error eius sapiente illo harum excepturi magnam fuga voluptatum, neque dolore vel molestias fugit accusantium iusto repellendus.
+        Voluptatem maiores, accusamus quisquam reprehenderit facilis itaque velit architecto suscipit neque eaque laborum sequi. Perspiciatis mollitia ullam dolor veniam, suscipit enim rerum repellendus quia adipisci, veritatis officia ratione unde maiores.
+        Molestiae corporis nobis, et nulla possimus esse culpa deleniti repellat natus voluptas perferendis ipsam numquam illum nostrum in obcaecati suscipit, minima quos id mollitia praesentium sapiente error, officiis quo. Non!
+        Ab modi consequuntur pariatur omnis laudantium culpa explicabo accusamus ea ad, consequatur tempore autem odit maiores animi recusandae est rerum nobis at facere distinctio totam, asperiores sed. Magni, natus repellat.
+        Minima maiores illum recusandae eligendi impedit debitis dolor quaerat saepe maxime iste, itaque, voluptate nam deleniti odio perferendis libero reprehenderit quidem dignissimos accusamus iusto culpa animi incidunt aperiam? Rerum, nobis?
+        Et architecto autem ducimus ullam unde necessitatibus officiis exercitationem non, beatae, dicta, nobis culpa porro sed voluptates vitae tempora soluta aliquid sunt quaerat saepe voluptas dignissimos recusandae. Porro, magnam aliquid!
+        Sed, error. Culpa deleniti nesciunt soluta, sunt temporibus in voluptate quidem ad, nobis repudiandae consequatur odit, laborum fuga. Veritatis ad exercitationem ex, unde corporis illo maiores recusandae totam quasi doloremque.
+        Vel ex, dolorum illum repellat velit alias esse! Quam quos vero dolorum ex cupiditate perferendis veniam suscipit odio quis, possimus deserunt modi quo iusto incidunt id nobis veritatis officiis ut!
+    </p>
 </body>
 </html>
