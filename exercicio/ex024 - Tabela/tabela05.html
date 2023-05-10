@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas tabelas tabelas</title>
+</head>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.1em;
+    }
+    table{
+        width: 400px;
+        margin: auto;
+        border-collapse: collapse;
+        
+    }
+    td,th{
+        text-align: center;
+        border: 2px solid black;
+        padding: 10px;
+
+    }
+
+    thead{
+        color: white;
+        background-color: rgb(115, 173, 189);
+    }
+
+    tr:hover{
+        background: black;
+        color: white;
+    }
+
+    .roxo{
+        background: rgb(230, 123, 230);
+    }
+
+    .vermelho{
+        background: rgb(230, 139, 139);
+    }
+</style>
+<body>
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+            <col class="roxo">
+            <col>
+            <col>
+            <col class="vermelho">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Gênero</th>
+                <th scope="col">Idade</th>
+                <th scope="col"> Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria Braga</td>
+                <td>Feminino</td>
+                <td>60</td>
+                <td>Apresentadora</td>
+            </tr>
+            <tr>
+                <td>Jorge Alberto</td>
+                <td>Masculino</td>
+                <td>25</td>
+                <td>Médico</td>
+            </tr>
+            <tr>
+                <td>Sol Cristi</td>
+                <td>Não Binário</td>
+                <td>19</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Marcella Vlad</td>
+                <td>Feminino</td>
+                <td>32</td>
+                <td>Policial de bikini</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
