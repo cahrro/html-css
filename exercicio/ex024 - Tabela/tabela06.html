@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas tabelas</title>
+</head>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    table{
+        border-collapse: collapse;
+        width: 400px;
+        border: 1px solid black;
+        margin: auto;  
+        position: relative;      
+    }  
+    
+    thead{
+        position: sticky;
+        top: -1px;
+    }
+    thead th, tfoot{
+        background-color: rgb(98, 134, 170);
+        color: white;
+    }
+    
+    caption{
+        font-size: 0.9em;
+        background-color: gray;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    td, th{
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    td:nth-child(2){
+        text-align: right;
+    }
+
+    tbody>tr:nth-child(even){
+        background-color: lightblue;
+    }
+    tbody>tr:hover{
+        color: white;
+        font-weight: bold;
+        background-color: rgb(62, 62, 204);
+    }
+
+
+    .container{
+        overflow: auto;
+    }
+</style>
+<body>
+    <h1>Tabela</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut odit aspernatur sint doloremque quia hic ratione magnam repellat est, commodi animi et nam facere expedita quas. Corporis cumque placeat iste.
+    Quasi quos iste iure aperiam sunt maiores eos eum pariatur quas modi quod reprehenderit earum saepe sed facere laudantium, corporis ipsum adipisci iusto? Omnis, repellat adipisci in itaque quas nam.</p>
+    <div class="container">
+        <table>
+            <caption>População de pessoas, pessoas essas, que moram em estados</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                    <th scope="col">Poggers</th>
+                    <th>Noggers</th>
+                    <th>oggers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>46 024 937</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>15 989 929</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td>14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td>10 444 526</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td>11 088 065</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td>9 051 113</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>8 936 431</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td>8 442 962</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td>7 762 154</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td>6 950 976</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td>6 800 605</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td>4 108 508</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td>4 030 961</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td>3 952 262</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td><strong>106 073 628</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
