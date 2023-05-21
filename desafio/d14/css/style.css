@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../imagens/fundo-madeira.jpg) center center / cover no-repeat fixed;
+    height: 97vh;
+}
+
+.container{
+    display: grid;
+    grid-row: 100px;
+}
+
+
+.gruporedes{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-self: flex-start;
+    width: 20%;
+    margin-right: 0;
+}
+
+a>img{
+    width: 40%;
+    margin: 5%;
+    border-radius: 50%;
+}
+
+.cel{
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+iframe{
+    position: absolute;
+    top: 13%;
+    padding: 5%;
+    width: 90%;
+    height: 80%;
+}
