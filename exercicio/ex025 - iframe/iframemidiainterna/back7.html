@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrado posicionado</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        height: 98vh;
+    }
+    #container{
+        position: relative;
+        background: pink url(imagens/target001.png) center center / 100% 100%;
+        height: 100vh;
+    }
+    #conteudo
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: lawngreen url(imagens/target001.png) center center / 100% 100%;;
+        min-height: 200px;
+        width: 400px;
+
+        transform: translate(-50%, -50%);
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="conteudo">
+        </div>
+    </div>
+</body>
+</html>
