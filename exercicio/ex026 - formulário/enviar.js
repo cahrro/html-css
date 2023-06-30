@@ -1,1 +1,3 @@
-Text('Dados enviados')
+function envio() {
+    alert("Dados enviados");
+}

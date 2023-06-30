@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="enviar.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formsks</title>
 </head>
 <body>
     <h1>Entrar</h1>
-    <form action="enviar.php" method="post">
+    <form action="enviar.php" method="post" autocomplete="on">
         <p>
             <label for="user">Usuário</label>
-            <input type="text" id="user" name="user" minlength="3" maxlength="10" required>
+            <input type="text" id="user" name="user" minlength="3" maxlength="10" required autocomplete="username">
         </p>
         <p>
             <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha" maxlength="8" size="8" required>
-            <input type="radio" id="opcao1">
-            <label for="opcao1">opc</label>
-            <fieldset>
-                <legend>batata</legend>
-                <input type="text">
-            </fieldset>
+            <input type="password" name="senha" id="senha" maxlength="8" size="8" required autocomplete="new-password">
         </p>
         <input type="submit" value="Enviar" onclick="envio">
+        <input type="reset" value="Limpar">
     </form>
 </body>
 </html>
