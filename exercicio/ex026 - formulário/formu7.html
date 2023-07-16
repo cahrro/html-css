@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres</title>
+</head>
+<body>
+    <form action="enviar.php" method="post">
+        <h1>Escolhas Escolhas</h1>
+        <p>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado" required>
+                <option value="" selected disabled>-- Escolha --</option>
+                <optgroup label="Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Centro Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="jogos">Jogos:</label>
+            <input type="text" id="jogos" name="jogos" list="jogoselec">
+            <datalist id="jogoselec">
+                <option>Undertale</option>
+                <option>Sally Face</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">Mensagem:</label>
+            <br>
+            <textarea name="msg" id="msg" cols="30" rows="5" maxlength="150" style="resize: none;"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+</body>
+</html>
