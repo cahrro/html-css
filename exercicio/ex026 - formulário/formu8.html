@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glao</title>
+</head>
+<body>
+    <h1>Calcular</h1>
+    <form action="enviar.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend><strong>Soma</strong></legend>
+            <p>
+                <label for="num1">Digite um numero: </label>
+                <input type="number" name="num1" id="num1" min="0" max="50" required oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+            </p>
+            <p>
+                <label for="num2">Digite um número</label>
+                <input type="number" name="num2" id="num2" min="0" max="50" oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+            </p>
+            <p>
+                <label for="soma">Resultado:</label>
+                <output name="soma" id="soma">0</output>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
