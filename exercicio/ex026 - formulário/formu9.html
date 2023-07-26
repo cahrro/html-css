@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leao</title>
+</head>
+<body>
+    <h1>Nível</h1>
+    <form action="enviar.php" autocomplete="on">
+        <p>
+            <label for="nivel">Deslize</label>
+            <input type="range" name="nivel" id="nivel" min="0" max="10" value="0" oninput="valor.innerHTML = Number(nivel.value)">
+            <output id="valor">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    <h1>Idade</h1>
+    <form action="enviar.php" autocomplete="on">
+        <p>
+            <label for="ano">Em que ano você nasceu: </label>
+            <input type="number" name="ano" id="ano" min="1900" max="2023" oninput="idade.innerHTML = atual - Number(ano.value)">
+        </p>
+        <p>
+            <label for="idade">Sua idade é: </label>
+            <output id="idade"></output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+            let atual = new Date().getFullYear();
+    </script>
+</body>
+</html>
