@@ -1,0 +1,27 @@
+/* iPads, Tablets */
+@media screen and (min-width: 581px)  {
+    body{
+        background-image: url('../imgs/back-tablet.jpg');
+    }
+}
+
+/* Small screens, laptops – 769px — 1024px. */
+@media screen and (min-width: 869px) {
+    body{
+        background-image: url('../imgs/L8q-qdn-laptop_header-scaled.jpg');
+    }
+}
+
+/* Desktops, large screens – 1025px — 1200px. */
+@media screen and (min-width: 1280px)  {
+    body{
+        background-image: url('../imgs/back-pc.jpg');
+    }
+}
+
+/* Extra large screens, TV – 1201px, and more.  */
+@media screen and (min-width: 2201px) {
+    body{
+        background-image: url('../imgs/back-tv.jpg');
+    }
+}
